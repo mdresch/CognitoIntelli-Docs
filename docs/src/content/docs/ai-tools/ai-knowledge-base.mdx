@@ -1,0 +1,102 @@
+---
+title: AI Knowledge Base
+description: Connect and manage external knowledge sources for your AI agents to reference and enhance their responses.
+---
+
+## Empower AI with Your Data
+
+The **AI Knowledge Base** in CognitoIntelli allows you to connect external knowledge sources and make them accessible to your AI agents. By connecting knowledge bases, you can significantly enhance the capabilities of your AI, enabling it to provide more informed, context-aware, and accurate responses based on your specific data and information.
+
+Use the AI Knowledge Base to:
+
+- **Improve AI Accuracy:** Provide your AI agents with access to verified and up-to-date information from your trusted sources, reducing reliance on general internet knowledge and improving response accuracy.
+- **Enhance Contextual Awareness:** Enable AI agents to understand and respond to queries within the context of your specific domain, company, or industry knowledge.
+- **Personalize AI Responses:** Tailor AI responses to reflect your organization's specific information, policies, and data.
+- **Create Specialized AI Assistants:** Build AI agents that are experts in your specific knowledge domain, capable of answering complex questions based on your internal data.
+- **Reduce Hallucinations and Inaccuracies:** Ground AI responses in reliable data from your knowledge base, minimizing the risk of AI "hallucinations" or generating inaccurate information.
+- **Centralize Knowledge Management:** Manage and organize your key information sources in one place, making them easily accessible to your AI applications.
+
+## Features
+
+- **Connect Multiple Knowledge Sources:** Connect various types of knowledge sources, including:
+    - **Websites:** Connect to website URLs to allow AI to crawl and index website content.
+    - **Files:** Upload and connect files in various formats (PDF, DOCX, TXT) for AI to process and learn from.
+    - **Databases:** Connect to databases to provide AI with access to structured data and information.
+    - **[Other Source Types]:** *[Add any other knowledge source types you support, e.g., APIs, CSV files]*
+- **Source Synchronization:**  Keep your knowledge bases up-to-date with automatic or manual synchronization options.
+    - **Automatic Daily Sync:** Schedule sources to automatically synchronize and refresh their data daily.
+    - **Manual Sync:** Trigger manual synchronization on demand to update sources immediately.
+- **Source Status Monitoring:** Track the status of your knowledge sources, including:
+    - **Synced:** Source is successfully synchronized and up-to-date.
+    - **Syncing:** Source is currently being synchronized.
+    - **Error:** Synchronization encountered an error (with error details if available).
+- **Source Content Management:** View key information about each connected source:
+    - **Source Name:**  Descriptive name for the knowledge source.
+    - **Source Type:**  Indicates the type of knowledge source (Website, Files, Database, etc.).
+    - **Item Count:**  Number of documents, pages, or data items indexed from the source.
+    - **Last Sync Date:**  Timestamp of the last successful synchronization.
+- **Source Enable/Disable:**  Enable or disable individual knowledge sources to control whether they are actively used by AI agents.
+- **Knowledge Base Settings:** Configure global settings for your knowledge base, such as:
+    - **Automatic Synchronization:** Enable/disable automatic daily synchronization for all sources.
+    - **Use Knowledge Base in Chat:** Toggle to control whether AI agents should reference the knowledge base when responding in chat interactions.
+    - **Cite Sources:** Enable/disable automatic citation of knowledge sources when AI uses information from the knowledge base in its responses.
+- **Knowledge Base Usage Analytics:**  Gain insights into how your knowledge base is being used:
+    - **Total Documents:**  Total number of documents indexed across all sources.
+    - **Storage Used:**  Amount of storage space used by your knowledge base.
+    - **Knowledge Queries:**  Number of times the knowledge base has been queried by AI agents.
+    - **Most Referenced Documents:**  List of the most frequently accessed documents from your knowledge base.
+
+## How to Use the AI Knowledge Base
+
+1.  **Navigate to the Knowledge Base Page:** Access the Knowledge Base management interface by clicking on the "Knowledge Base" or "AI Knowledge Base" link in the main navigation menu.
+
+2.  **Add a New Knowledge Source:**
+    - **Click "Add Source":** Click the "Add Source" button. This will open the "Add Knowledge Source" card.
+    - **Select Source Type:** Choose the type of knowledge source you want to connect (Website, Upload Files, Database, etc.) by clicking on the corresponding icon/card.
+    - **Enter Source Details:**  Depending on the source type, you will be prompted to enter specific details:
+        - **Website:** Enter the website URL you want to connect.
+        - **Upload Files:**  Use the file upload interface to upload files from your computer.
+        - **Database:**  Enter database connection details (connection string, credentials, etc.).
+        - **[Other Source Types]:** *[Describe the input required for any other source types you support]*
+    - **Click "Add":** Click the "Add" button to add the new knowledge source.
+
+3.  **Manage Knowledge Sources:**
+    - **View Source List:**  The main Knowledge Base page displays a list of your connected knowledge sources.
+    - **Review Source Information:** For each source in the list, you can see:
+        - **Source Name:**
+        - **Source Type:**
+        - **Status:** (Synced, Syncing, Error)
+        - **Item Count:**
+        - **Last Sync Date:**
+    - **Check Source Status:**  Pay attention to the "Status" indicator for each source to ensure your knowledge bases are synchronized and up-to-date.  If a source shows an "Error" status, investigate and troubleshoot the connection.
+    - **Enable/Disable Sources:** Use the toggle switch next to each source to enable or disable it. Disabled sources will not be used by AI agents.
+    - **Delete Sources:** Click the "Trash" icon button to delete a knowledge source that is no longer needed. **Warning:** Deleting a source will remove its data from the knowledge base.
+
+4.  **Monitor Source Synchronization:**
+    - **View Sync Status:**  Observe the "Status" indicator for each source. "Syncing" status indicates that the source is currently being updated. "Synced" status indicates successful synchronization. "Error" indicates a problem during synchronization.
+    - **Manual Sync (if available):** If you have a "Sync Now" or "Refresh" button, you can use it to manually trigger synchronization for a specific source.
+    - **Automatic Sync Settings:** Configure automatic daily synchronization in the "Settings" tab (see next step).
+
+5.  **Configure Knowledge Base Settings (Settings Tab):**
+    - **Navigate to "Settings" Tab:** Click on the "Settings" tab within the Knowledge Base page.
+    - **Automatic Synchronization:**  Enable or disable "Automatic Synchronization" to control whether knowledge sources are automatically synced daily.  If enabled, sources will be refreshed automatically in the background.
+    - **Use Knowledge Base in Chat:** Toggle "Use Knowledge Base in Chat" to control whether AI agents should reference the knowledge base when responding to user messages in the chat interface.  Enable this to allow AI to leverage your connected knowledge.
+    - **Cite Sources:** Toggle "Cite Sources" to enable or disable automatic citation of knowledge sources in AI responses. If enabled, when AI uses information from the knowledge base, it will attempt to include citations or references in its responses (if supported by your AI agents and models).
+
+6.  **Review Usage Analytics (Usage & Analytics Tab):**
+    - **Navigate to "Usage & Analytics" Tab:** Click on the "Usage & Analytics" tab within the Knowledge Base page.
+    - **Analyze Summary Metrics:** Review the summary cards displaying "Total Documents," "Storage Used," and "Knowledge Queries." These metrics provide a high-level overview of your knowledge base usage and size.
+    - **Explore "Most Referenced Documents":** Examine the list of "Most Referenced Documents." This list shows the documents from your knowledge base that are accessed most frequently by AI agents, indicating the most valuable or relevant content within your knowledge base.
+
+## Tips for Effective Knowledge Base Management
+
+- **Start with Key Knowledge Sources:** Begin by connecting your most important and frequently used knowledge sources first.
+- **Organize Sources by Type or Topic:** Use descriptive names for your knowledge sources to easily identify and organize them by type (e.g., "Company Website", "Product Documentation PDFs", "Customer FAQ Database") or topic.
+- **Regularly Update Sources:** Keep your knowledge bases up-to-date by ensuring sources are synchronized regularly (either automatically or manually). Outdated information can lead to inaccurate or irrelevant AI responses.
+- **Monitor Sync Status and Address Errors:**  Periodically check the synchronization status of your knowledge sources and promptly address any errors to ensure data integrity.
+- **Use Knowledge Base Settings to Control AI Behavior:**  Utilize the "Use Knowledge Base in Chat" and "Cite Sources" settings to fine-tune how your AI agents interact with and leverage the knowledge base.
+- **Analyze Usage Analytics to Optimize:**  Regularly review the "Usage & Analytics" data to understand how your knowledge base is being used and identify areas for improvement, such as adding more relevant sources, optimizing content, or refining AI agent prompts to better utilize the knowledge base.
+
+---
+
+**[Link to next tool documentation page, e.g., AI Prompt Library]**

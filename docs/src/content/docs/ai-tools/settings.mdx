@@ -1,0 +1,191 @@
+---
+title: Settings
+description: Customize your CognitoIntelli experience with general, AI, appearance, and privacy settings.
+---
+
+## Customize CognitoIntelli to Your Preferences
+
+The **Settings Page** in CognitoIntelli allows you to personalize and configure various aspects of the platform to match your preferences and needs.  The Settings are organized into different tabs, providing you with granular control over general application behavior, AI model configurations, appearance customization, and privacy options.
+
+Use the Settings Page to:
+
+- **Personalize Your Experience:**  Customize CognitoIntelli to align with your workflow, visual preferences, and privacy needs.
+- **Configure AI Behavior:** Adjust default AI models, parameters, and system prompts to fine-tune AI responses for your use cases.
+- **Manage General Application Settings:** Control features like auto-saving conversations, notifications, and language preferences.
+- **Customize Appearance:**  Switch between light and dark mode, choose a theme color, and adjust font sizes for optimal readability and visual appeal.
+- **Control Privacy and Security Options:** Manage data collection preferences, conversation history settings, and access data management tools.
+
+## Navigating the Settings Page
+
+The Settings Page is organized into the following tabs:
+
+- **General:**  Contains settings related to general application behavior and user preferences.
+- **AI Configuration:**  Allows you to configure default AI models, parameters, and system prompts used across CognitoIntelli.
+- **Appearance:**  Provides options to customize the visual appearance of the application, including themes, colors, and fonts.
+- **Privacy & Security:**  Contains settings related to data collection, conversation history, and data management options to control your privacy and security preferences.
+
+## General Tab - Application Wide Settings
+
+The **General** tab contains settings that apply to the overall CognitoIntelli application experience.
+
+### Auto-save conversations
+
+- **Setting Name:** Auto-save conversations
+- **Description:**  "Automatically save all conversations"
+- **Functionality:** When enabled, CognitoIntelli will automatically save all your conversations, ensuring that your chat history is preserved and accessible later.
+- **Control:** Toggle switch (On/Off).
+- **How to Use:**  To enable or disable auto-saving of conversations, toggle the "Auto-save conversations" switch to your desired setting.
+- **Best Practice:**  It is generally recommended to keep auto-save enabled to prevent accidental data loss and maintain a history of your AI interactions. However, if you have specific privacy concerns or prefer not to save conversations, you can disable this feature.
+
+### Notifications
+
+- **Setting Name:** Notifications
+- **Description:** "Receive notifications for new messages"
+- **Functionality:** When enabled, CognitoIntelli will send you notifications (e.g., browser notifications, email notifications - depending on implementation) when you receive new messages from AI agents or the system.
+- **Control:** Toggle switch (On/Off).
+- **How to Use:** To enable or disable notifications, toggle the "Notifications" switch.  You may need to grant browser notification permissions for browser notifications to work.
+- **Note:** The specific type of notifications (browser, email, etc.) and notification delivery mechanisms may depend on your CognitoIntelli setup and configuration.
+
+### Language
+
+- **Setting Name:** Language
+- **Description:** "Application Language"
+- **Functionality:**  Allows you to select the preferred language for the CognitoIntelli user interface.  This setting will change the language of menus, labels, buttons, and other UI text elements within the application.
+- **Control:** Dropdown Select menu.
+- **How to Use:**  Click on the "Language" dropdown menu to see a list of supported languages. Select your preferred language from the list. The UI language will update to your selected language (may require a page refresh in some cases).
+- **Supported Languages:** [*(List the languages you support in the dropdown, e.g., English, Spanish, French, German, Japanese)*]
+
+---
+
+## AI Configuration Tab - Fine-tuning AI Behavior
+
+The **AI Configuration** tab allows you to customize the default behavior of AI models and agents within CognitoIntelli.  These settings can influence the responses you get from AI across different tools and interfaces.
+
+### Default Model
+
+- **Setting Name:** Default Model
+- **Description:** "Default AI Model for Interactions"
+- **Functionality:** Sets the default AI model that will be used for AI interactions within CognitoIntelli (e.g., in the AI Playground, Chat interface, and potentially in some workflows, unless overridden).
+- **Control:** Dropdown Select menu.
+- **How to Use:** Click on the "Default Model" dropdown menu to see a list of available AI models. Select your preferred default AI model from the list.
+- **Available Models:** [*(List the AI models available in your dropdown, e.g., GPT-3.5 Turbo, GPT-4, Claude v1, Claude Instant)*]
+- **Note:** You may be able to override the default model selection in specific tools or contexts (e.g., choosing a different model within the AI Playground).
+
+### Default Agent
+
+- **Setting Name:** Default Agent
+- **Description:** "Default AI Agent Persona"
+- **Functionality:** Sets the default AI agent persona or role that will be used for AI interactions within CognitoIntelli (if you have implemented AI agents with distinct roles).
+- **Control:** Dropdown Select menu.
+- **How to Use:** Click on the "Default Agent" dropdown menu to see a list of available AI agents. Select your preferred default AI agent from the list.
+- **Available Agents:** [*(List the AI agents available in your dropdown, e.g., General Assistant, Code Expert, Creative Writer, Data Analyst)*]
+- **Note:** Similar to default models, you may be able to override the default agent selection in specific tools or contexts.
+
+### Temperature
+
+- **Setting Name:** Temperature
+- **Description:** "Controls randomness"
+- **Functionality:**  Adjusts the "temperature" parameter for AI models, which controls the randomness and creativity of AI responses.
+    - **Lower Temperature (closer to 0):** Makes AI responses more deterministic, focused, and predictable. Good for tasks requiring accuracy and precision.
+    - **Higher Temperature (closer to 1):** Makes AI responses more creative, varied, and sometimes less predictable. Good for brainstorming, creative writing, or exploring diverse outputs.
+- **Control:** Slider.
+- **How to Use:** Use the "Temperature" slider to adjust the temperature value between 0 and 1. Drag the slider to the left for lower temperature (more deterministic) or to the right for higher temperature (more creative).
+- **Default Value:** [*(State your default temperature value, e.g., 0.7)*]
+- **Range:** 0 to 1 (inclusive).
+
+### Max Tokens
+
+- **Setting Name:** Max Tokens
+- **Description:** "Maximum response length"
+- **Functionality:**  Sets the maximum number of tokens (roughly words or word pieces) that the AI model will generate in its responses. This setting controls the maximum length of AI outputs.
+- **Control:** Slider.
+- **How to Use:** Use the "Max Tokens" slider to adjust the maximum token value. Drag the slider to the left to decrease the maximum response length or to the right to increase it.
+- **Default Value:** [*(State your default max tokens value, e.g., 2048)*]
+- **Range:** [*(State your allowed range, e.g., 256 to 4096)*]
+- **Note:**  Increasing max tokens can lead to longer and more detailed responses but may also increase API usage and cost (if applicable).
+
+---
+
+## Appearance Tab - Visual Customization
+
+The **Appearance** tab allows you to customize the visual presentation of CognitoIntelli to match your preferences.
+
+### Dark Mode
+
+- **Setting Name:** Dark Mode
+- **Description:** "Toggle between light and dark mode"
+- **Functionality:** Switches the application's theme between light mode (light background and dark text) and dark mode (dark background and light text). Dark mode can be easier on the eyes in low-light conditions and can save energy on some screens.
+- **Control:** Toggle switch (On/Off).
+- **How to Use:** To enable or disable dark mode, toggle the "Dark Mode" switch. The application theme will update immediately to reflect your selection.
+
+### Theme Color
+
+- **Setting Name:** Theme Color
+- **Description:** "Application's primary accent color"
+- **Functionality:** Allows you to select the primary accent color used throughout the CognitoIntelli user interface. This color is typically used for buttons, links, highlights, and other UI elements to provide visual branding and customization.
+- **Control:** Color Palette Grid (Clickable color swatches).
+- **How to Use:** Click on one of the color swatches in the "Theme Color" grid to select a new theme color. The application's accent color will update to your selected color.
+- **Available Colors:** [*(List the theme colors you offer, e.g., Blue, Purple, Green, Red, Orange)*]
+
+### Font Size
+
+- **Setting Name:** Font Size
+- **Description:** "Application's base font size"
+- **Functionality:**  Allows you to adjust the base font size used throughout the CognitoIntelli application.  Increasing font size can improve readability, especially for users with visual impairments or on smaller screens.
+- **Control:** Dropdown Select menu.
+- **How to Use:** Click on the "Font Size" dropdown menu to see a list of available font size options. Select your preferred font size from the list (e.g., Small, Medium, Large). The font size of the UI text will update to your selected size.
+- **Available Sizes:** [*(List the font size options, e.g., Small, Medium, Large)*]
+
+---
+
+## Privacy & Security Tab - Data and Privacy Controls
+
+The **Privacy & Security** tab provides settings to control your data privacy and security preferences within CognitoIntelli.
+
+### Data Collection
+
+- **Setting Name:** Data Collection
+- **Description:** "Allow anonymous usage data collection"
+- **Functionality:** Controls whether CognitoIntelli collects anonymous usage data.
+    - **Enabled (Default):**  Allows the application to collect anonymized data about how you use CognitoIntelli features. This data helps improve the application, identify areas for optimization, and understand user behavior trends. **No personally identifiable information is collected.**
+    - **Disabled:**  Prevents the application from collecting anonymous usage data.
+- **Control:** Toggle switch (On/Off).
+- **How to Use:** To enable or disable anonymous usage data collection, toggle the "Data Collection" switch.
+- **Privacy Commitment:** [*(Add a sentence or two about your commitment to user privacy and data anonymization. E.g., "We are committed to user privacy. All collected data is anonymized and does not contain any personally identifiable information." or link to a detailed Privacy Policy if you have one)*]
+
+### Conversation History
+
+- **Setting Name:** Conversation History
+- **Description:** "Store conversation history"
+- **Functionality:** Controls whether CognitoIntelli stores your conversation history.
+    - **Enabled (Default):**  Stores your conversations, allowing you to access and review them later in the chat interface and message history sidebar.
+    - **Disabled:** Prevents the application from storing your conversation history. Conversations may be ephemeral and not saved after you close the chat window or log out.
+- **Control:** Toggle switch (On/Off).
+- **How to Use:** To enable or disable conversation history storage, toggle the "Conversation History" switch.
+- **Privacy Consideration:** Disabling conversation history may enhance privacy but will also mean you lose the ability to review past conversations.
+
+### Data Management
+
+The "Data Management" section provides tools to manage your data within CognitoIntelli.
+
+- **Export All Data Button:**
+    - **Button Label:** Export All Data
+    - **Functionality:**  Allows you to export all your CognitoIntelli data (e.g., conversation history, saved prompts, settings - depending on what data you store) into a downloadable file (e.g., JSON or CSV format).
+    - **How to Use:** Click the "Export All Data" button. The application will prepare a data export file, and you will be prompted to download it to your computer.
+    - **Purpose:**  Allows you to create a backup of your data, transfer your data to another system, or review your data offline.
+
+- **Delete All Conversations Button (Destructive Action):**
+    - **Button Label:** Delete All Conversations
+    - **Button Style:**  Typically styled as "destructive" (e.g., red color) to indicate it's a potentially irreversible action.
+    - **Functionality:** **Permanently deletes all your conversation history** from CognitoIntelli. **This action is irreversible.**
+    - **How to Use:** Click the "Delete All Conversations" button. You will typically be presented with a confirmation modal to verify that you understand this action is permanent and irreversible. Confirm your intention in the modal to proceed with deleting all conversations. **Use with caution.**
+
+- **Delete Account Button (Destructive Action):**
+    - **Button Label:** Delete Account
+    - **Button Style:** Typically styled as "destructive" (e.g., red color) to indicate it's a potentially irreversible action.
+    - **Functionality:** **Permanently deletes your CognitoIntelli account and all associated data.** This action is irreversible and will remove your access to the platform.
+    - **How to Use:** Click the "Delete Account" button. You will be presented with a confirmation modal to verify that you understand this action is permanent, irreversible, and will delete your account and all associated data. Carefully review the confirmation message. If you are sure you want to delete your account, confirm your intention in the modal to proceed. **Use with extreme caution.**
+
+---
+
+**[Link to next tool documentation page, or back to main AI Tools index page, or to "Getting Started" if Settings is the last tool doc]**

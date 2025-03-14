@@ -6,6 +6,7 @@ import markdocGrammar from './grammars/markdoc.tmLanguage.json';
 
 export const locales = {
 	root: { label: 'English', lang: 'en' },
+	nl: { label: 'Nederlands', lang: 'nl' },
 	de: { label: 'Deutsch', lang: 'de' },
 	es: { label: 'Español', lang: 'es' },
 	ja: { label: '日本語', lang: 'ja' },
@@ -35,18 +36,18 @@ export default defineConfig({
 	trailingSlash: 'always',
 	integrations: [
 		starlight({
-			title: 'Starlight',
+			title: 'CognitoIntelli',
 			logo: {
-				light: '/src/assets/logo-light.svg',
-				dark: '/src/assets/logo-dark.svg',
+				light: '/src/assets/cba-light.png',
+				dark: '/src/assets/cba-dark.png',
 				replacesTitle: true,
 			},
 			lastUpdated: true,
 			editLink: {
-				baseUrl: 'https://github.com/withastro/starlight/edit/main/docs/',
+				baseUrl: 'https://github.com/mdresch/cognitointelli-docs/edit/main/docs/',
 			},
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/mdresch/cognitointelli-docs',
 				discord: 'https://astro.build/chat',
 			},
 			head: [
@@ -74,6 +75,7 @@ export default defineConfig({
 					label: 'Start Here',
 					translations: {
 						de: 'Beginne hier',
+						nl: 'Begin hier',
 						es: 'Comienza aqui',
 						ja: 'ここからはじめる',
 						fr: 'Commencez ici',
@@ -112,6 +114,48 @@ export default defineConfig({
 							},
 						},
 					],
+				},
+				{
+					label: 'AI-Tools',
+					translations: {
+						de: 'KI-Tools',
+						nl: 'AI-tools',
+						es: 'Herramientas de IA',
+						ja: 'AIツール',
+						fr: 'Outils IA',
+						it: 'Strumenti AI',
+						id: 'Alat AI',
+						'zh-CN': 'AI工具',
+						'pt-BR': 'Ferramentas de IA',
+						'pt-PT': 'Ferramentas de IA',
+						ko: 'AI 도구',
+						tr: 'AI Araçları',
+						ru: 'Инструменты ИИ',
+						hi: 'एआई उपकरण',
+						uk: 'Інструменти ШІ',
+					},
+					autogenerate: { directory: 'ai-tools' },
+				},
+				{
+					label: 'Chat',
+					translations: {
+						de: 'Chat',
+						nl: 'Chat',
+						es: 'Chat',
+						ja: 'チャット',
+						fr: 'Chat',
+						it: 'Chat',
+						id: 'Obrolan',
+						'zh-CN': '聊天',
+						'pt-BR': 'Chat',
+						'pt-PT': 'Chat',
+						ko: '채팅',
+						tr: 'Sohbet',
+						ru: 'Чат',
+						hi: 'चैट',
+						uk: 'Чат',
+					},
+					autogenerate: { directory: 'chat' },
 				},
 				{
 					label: 'Guides',
